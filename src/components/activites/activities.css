@@ -1,0 +1,43 @@
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.activity-card {
+  text-align: center;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  border: 2px solid #f0f0f0;
+}
+
+.activity-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.activity-card h3 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.activity-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+.activity-card:hover {
+  background-color: #f5f9ff;
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,55 @@
+.hero {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-slide-image {
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-slide-image {
+    height: 50vh;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  font-size: 28px;
+  opacity: 1;
+}
+
+.line-indicator {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.line-segment {
+  width: 30px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.line-segment.active {
+  background-color: white;
+}

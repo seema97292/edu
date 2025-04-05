@@ -1,0 +1,138 @@
+.testimonal {
+  padding: 30px 0 40px;
+  
+}
+
+.testimonal .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px; 
+}
+
+.testimonal .items {
+  padding: 30px;
+  transition: 0.4s;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.1);
+  position: relative;
+  border-left: 6px solid #007BFF;
+  border-right: 6px solid #FF6B00;
+}
+
+.testimonal .img {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.testimonal img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #007BFF;
+  object-fit: cover;
+  background: #fff;
+}
+
+.testimonal i {
+  position: absolute;
+  bottom: 0;
+  right: 32%;
+  background-color: #FF6B00;
+  color: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 13px;
+  z-index: 2;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(255, 107, 0, 0.3);
+}
+
+.testimonal .name {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.testimonal .name h2 {
+  font-size: 19px;
+  margin-bottom: 4px;
+  color: #007BFF;
+  font-weight: 700;
+}
+
+.testimonal .name span {
+  color: #FF6B00;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.testimonal p {
+  margin-top: 16px;
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 15px;
+  font-style: italic;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonal .items:hover {
+  transform: translateY(-5px);
+  background: #f5f9ff;
+  box-shadow: 0 14px 40px rgba(0, 123, 255, 0.2);
+}
+
+.testimonal .items:hover span,
+.testimonal .items:hover .name h2 {
+  color: #0056b3;
+}
+
+.testimonal .items:hover i {
+  background-color: #007BFF;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonal {
+    padding: 20px 0 30px;
+  }
+
+  .testimonal .items {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .testimonal .name h2 {
+    font-size: 16px;
+    
+  }
+
+  .testimonal .name span {
+    font-size: 13px;
+  }
+
+  .testimonal p {
+    font-size: 14px;
+  }
+
+  .testimonal .content {
+    gap: 15px;
+  }
+}
+#heading h3 {
+  color:#0056b3 ;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
