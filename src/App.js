@@ -8,6 +8,10 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/common/footer/Footer";
 import Home from "./components/home/Home";
 import Activities from "./components/activites/Activities";
+import Chatbot from "./components/chatbot/Chatbot";
+import Login from "./components/login/Login";
+import Signup from "./components/signup/Signup";
+
 
 function App() {
   return (
@@ -20,7 +24,10 @@ function App() {
         <Route path="/teacher" element={<Team />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
+      <Chatbot />
       <Footer />
     </>
   );

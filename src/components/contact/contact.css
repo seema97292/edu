@@ -46,39 +46,65 @@ form .flexSB input:nth-child(1) {
 }
 
 .contacts span {
-  color: #1eb2a6;
+  color: #1e54b2;
   font-weight: 600;
   font-size: 15px;
   word-spacing: 5px;
 }
 
 @media screen and (max-width: 768px) {
+  
   .contacts .container {
     flex-direction: column;
   }
 
   .contacts iframe {
-    height: 50vh;
+    height: 50vh; 
   }
 
   .contacts .row {
     width: 100%;
   }
+
+  .contacts .right {
+    padding: 20px; 
+  }
+
+  .contacts textarea,
+  .contacts input {
+    padding: 12px; 
+  }
+
+  .contacts h1 {
+    font-size: 24px;
+  }
+
+  .contacts h3 {
+    font-size: 18px;
+  }
+
+  .primary-btn {
+    width: 100%; 
+    padding: 14px;
+    font-size: 16px; 
+  }
 }
 
+@media screen and (max-width: 480px) {
+  .contacts .right {
+    padding: 15px; 
+  }
 
-.primary-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: 5px;
-}
+  .contacts h1 {
+    font-size: 20px; 
+  }
 
-.primary-btn:hover {
-  background-color: #0056b3;
+  .primary-btn {
+    padding: 12px;
+    font-size: 14px; 
+  }
+
+  .contacts h3 {
+    font-size: 16px;
+  }
 }

@@ -15,9 +15,7 @@ export const homeAbout = [
     title: "Track Student Progress",
     desc: "Parents and students can easily monitor performance, attendance, and homework through real-time dashboards.",
   },
-];
-
-  
+]; 
 export const awrapper = [
   {
     cover:

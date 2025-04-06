@@ -36,7 +36,6 @@ const Header = () => {
             Sign Up
           </button>
         </div>
-
         <button className="toggle" onClick={() => setClick(!click)}>
           <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
         </button>
